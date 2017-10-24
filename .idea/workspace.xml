@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6752f8e9-cf65-457f-9d6f-5633bee622be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/Service.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/conf/RestUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/LocationService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/LocationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/PaymentService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/PaymentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/ResAdminService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/ResAdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/RoomService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/RoomService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/StudentService.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/StudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/LocationServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/LocationServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/PaymentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/PaymentServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/ResAdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/ResAdminServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/RoomServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/RoomServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/StudentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/StudentServiceImpl.java" />
     </list>
     <ignored path="student_accommodation_system.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,7 +122,7 @@
       <file leaf-file-name="StudentServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/StudentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
+            <state relative-caret-position="714">
               <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
               <folding>
                 <element signature="e#939#940#0" expanded="true" />
@@ -390,74 +380,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-              <item name="admnistrator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-              <item name="room" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Accomodation_System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="studentaccommodation" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="student_accommodation_system" type="b2602c69:ProjectViewProjectNode" />
@@ -956,7 +878,7 @@
       <workItem from="1507978166421" duration="911000" />
       <workItem from="1508019768879" duration="752000" />
       <workItem from="1508504441818" duration="619000" />
-      <workItem from="1508834833922" duration="8297000" />
+      <workItem from="1508834833922" duration="8998000" />
     </task>
     <task id="LOCAL-00001" summary="Final Commit">
       <created>1508840516084</created>
@@ -965,7 +887,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508840516084</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Final Commit">
+      <created>1508843439232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1508843439232</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -974,11 +903,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116665000" />
+    <option name="totallyTimeSpent" value="117366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -993,7 +921,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22715405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.101875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1537,7 +1465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/ac/cput/studentaccommodation/services/impl/StudentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
+        <state relative-caret-position="714">
           <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
           <folding>
             <element signature="e#939#940#0" expanded="true" />
