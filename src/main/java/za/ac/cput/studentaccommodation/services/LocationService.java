@@ -1,5 +1,6 @@
 package za.ac.cput.studentaccommodation.services;
 
+import org.springframework.stereotype.Component;
 import za.ac.cput.studentaccommodation.domain.Location;
 
 import java.util.List;
@@ -7,8 +8,8 @@ import java.util.List;
 /**
  * Created by student on 2015/05/20.
  */
-public interface LocationService {
-    List<Location> getLocations();
+@Component
+public interface LocationService extends Service<Location,String>
+{
 
-    Location getLocation(Long locationID);
 }

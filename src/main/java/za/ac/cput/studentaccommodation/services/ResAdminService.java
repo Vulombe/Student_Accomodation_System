@@ -1,5 +1,6 @@
 package za.ac.cput.studentaccommodation.services;
 
+import org.springframework.stereotype.Component;
 import za.ac.cput.studentaccommodation.domain.ResAdmin;
 
 import java.util.List;
@@ -7,8 +8,8 @@ import java.util.List;
 /**
  * Created by student on 2015/05/20.
  */
-public interface ResAdminService {
-    List<ResAdmin> getResAdmins();
+@Component
+public interface ResAdminService extends Service<ResAdmin,String>
+{
 
-    ResAdmin getResAdmin(Long empID);
 }

@@ -6,10 +6,12 @@ import za.ac.cput.studentaccommodation.domain.Location;
 import za.ac.cput.studentaccommodation.domain.ResAdmin;
 import za.ac.cput.studentaccommodation.repository.LocationRepository;
 import za.ac.cput.studentaccommodation.repository.ResAdminRepository;
+import za.ac.cput.studentaccommodation.restapi.location.LocationAPI;
 import za.ac.cput.studentaccommodation.services.LocationService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by student on 2015/05/20.
@@ -17,21 +19,39 @@ import java.util.List;
 @Service
 public class LocationServiceImpl implements LocationService{
 
-    @Autowired
-    LocationRepository repository;
+    private static LocationServiceImpl locationService=null;
 
-    public List<Location> getLocations()
-    {
-        List<Location> allLocations = new ArrayList<Location>();
-        Iterable<Location> locations = repository.findAll();
-        for(Location location: locations)
-            allLocations.add(location);
+    private LocationServiceImpl(){}
 
-        return allLocations;
+    public  static LocationServiceImpl getInstance(){
+        if(locationService==null) {
+            return new LocationServiceImpl();
+        }
+        return locationService;
     }
 
-    public Location getLocation(Long locationID)
-    {
-        return repository.findOne(locationID);
+    @Override
+    public Location findById(String s) {
+        return LocationAPI.findById(s);
+    }
+
+    @Override
+    public Location save(Location entity) {
+        return LocationAPI.save(entity);
+    }
+
+    @Override
+    public Location update(Location entity) {
+        return LocationAPI.update(entity);
+    }
+
+    @Override
+    public void delete(Location entity) {
+        LocationAPI.update(entity);
+    }
+
+    @Override
+    public Set<Location> findAll() {
+        return LocationAPI.findAll();
     }
 }

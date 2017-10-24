@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.ac.cput.studentaccommodation.domain.ResAdmin;
 import za.ac.cput.studentaccommodation.repository.ResAdminRepository;
+import za.ac.cput.studentaccommodation.restapi.admnistrator.ResAdminAPI;
 import za.ac.cput.studentaccommodation.services.ResAdminService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by student on 2015/05/20.
@@ -15,21 +17,39 @@ import java.util.List;
 @Service
 public class ResAdminServiceImpl implements ResAdminService
 {
-    @Autowired
-    ResAdminRepository repository;
+    private static ResAdminServiceImpl resAdminService=null;
 
-    public List<ResAdmin> getResAdmins()
-    {
-        List<ResAdmin> allResAdmins = new ArrayList<ResAdmin>();
-        Iterable<ResAdmin> resAdmins = repository.findAll();
-        for(ResAdmin resAdmin: resAdmins)
-            allResAdmins.add(resAdmin);
+    private ResAdminServiceImpl(){}
 
-        return allResAdmins;
+    public  static ResAdminServiceImpl getInstance(){
+        if(resAdminService==null) {
+            return new ResAdminServiceImpl();
+        }
+        return resAdminService;
     }
 
-    public ResAdmin getResAdmin(Long empID)
-    {
-        return repository.findOne(empID);
+    @Override
+    public ResAdmin findById(String s) {
+        return ResAdminAPI.findById(s);
+    }
+
+    @Override
+    public ResAdmin save(ResAdmin entity) {
+        return ResAdminAPI.save(entity);
+    }
+
+    @Override
+    public ResAdmin update(ResAdmin entity) {
+        return ResAdminAPI.update(entity);
+    }
+
+    @Override
+    public void delete(ResAdmin entity) {
+        ResAdminAPI.update(entity);
+    }
+
+    @Override
+    public Set<ResAdmin> findAll() {
+        return ResAdminAPI.findAll();
     }
 }

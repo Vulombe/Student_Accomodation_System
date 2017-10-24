@@ -6,10 +6,12 @@ import za.ac.cput.studentaccommodation.domain.Payment;
 import za.ac.cput.studentaccommodation.domain.ResAdmin;
 import za.ac.cput.studentaccommodation.repository.PaymentRepositroy;
 import za.ac.cput.studentaccommodation.repository.ResAdminRepository;
+import za.ac.cput.studentaccommodation.restapi.payment.PaymentAPI;
 import za.ac.cput.studentaccommodation.services.PaymentService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by student on 2015/05/20.
@@ -17,21 +19,39 @@ import java.util.List;
 @Service
 public class PaymentServiceImpl implements PaymentService
 {
+    private static PaymentServiceImpl paymentService=null;
 
-    @Autowired
-    PaymentRepositroy repository;
+    private PaymentServiceImpl(){}
 
-    public List<Payment> getPayments()
-    {
-        List<Payment> allPayments = new ArrayList<Payment>();
-        Iterable<Payment> payments = repository.findAll();
-        for(Payment payment: payments)
-            allPayments.add(payment);
-
-        return allPayments;
+    public  static PaymentServiceImpl getInstance(){
+        if(paymentService==null) {
+            return new PaymentServiceImpl();
+        }
+        return paymentService;
     }
 
-    public Payment getPayment(Long locationID) {
-        return repository.findOne(locationID);
+    @Override
+    public Payment findById(String s) {
+        return PaymentAPI.findById(s);
+    }
+
+    @Override
+    public Payment save(Payment entity) {
+        return PaymentAPI.save(entity);
+    }
+
+    @Override
+    public Payment update(Payment entity) {
+        return PaymentAPI.update(entity);
+    }
+
+    @Override
+    public void delete(Payment entity) {
+        PaymentAPI.update(entity);
+    }
+
+    @Override
+    public Set<Payment> findAll() {
+        return PaymentAPI.findAll();
     }
 }
